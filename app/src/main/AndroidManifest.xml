@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SecondActivity"></activity>
 
-        <service android:name=".MusicService" />
+        <service android:name=".MusicService"
+            android:stopWithTask="true"/>
 
         <activity android:name=".BaseActivity" />
         <activity android:name=".MainActivity">

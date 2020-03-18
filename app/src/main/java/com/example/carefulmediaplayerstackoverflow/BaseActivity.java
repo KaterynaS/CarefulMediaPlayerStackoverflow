@@ -16,10 +16,8 @@ public class BaseActivity extends AppCompatActivity {
     ImageButton soundImageButton;
 
 
-
     public void updateSoundButton()
     {
-
         appState = AppState.getInstance();
         soundImageButton = findViewById(R.id.sound_imagebutton);
         if(appState.isPlaying())
@@ -30,7 +28,6 @@ public class BaseActivity extends AppCompatActivity {
         {
             soundImageButton.setImageDrawable(getResources().getDrawable(R.drawable.volume_off));
         }
-
     }
 
     public void turnSound(View v)
